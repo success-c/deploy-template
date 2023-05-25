@@ -1,4 +1,4 @@
-module.exports = Object.freeze({
+module.exports =(projectName:string)=> Object.freeze({
   PRIVATE_KEY: "home/.ssh/id_rsa", // 密钥地址
   SERVER: [
     {
@@ -17,7 +17,7 @@ module.exports = Object.freeze({
    /**
    * 钉钉名称
    */
-  name: '扶绥',
+  name:projectName,
   /**
    * 机器人推送地址
    */
