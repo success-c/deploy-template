@@ -10,26 +10,21 @@ module.exports = Object.freeze({
       DIST: "./dist", // 需要部署的打包过后的文件夹 根据项目不同值不同 一般为 build static 或者dist
       SCRIPT: "yarn build:prod", // 打包命令 可能项目由不同的构建命令 如打包指定环境的代码
       PATH: "/root/501", // 服务器存放静态文件目录
-    },
-    {
-      NAME: "server-506",
-      SERVER_PATH: "192.168.117.133",
-      SSH_USER: "root", // 服务器用户名
-      SSH_KEY: "root", // 服务器密码
-      PORT: 22, // 端口 默认为22
-      DIST: "./dist", // 需要部署的打包过后的文件夹 根据项目不同值不同 一般为 build static 或者dist
-      SCRIPT: "yarn build:prod", // 打包命令 可能项目由不同的构建命令 如打包指定环境的代码
-      PATH: "/root/506", // 服务器存放静态文件目录
-    },
-    {
-      NAME: "server-603",
-      SERVER_PATH: "192.168.117.133",
-      SSH_USER: "root", // 服务器用户名
-      SSH_KEY: "root", // 服务器密码
-      PORT: 22, // 端口 默认为22
-      DIST: "./dist", // 需要部署的打包过后的文件夹 根据项目不同值不同 一般为 build static 或者dist
-      SCRIPT: "yarn build:prod", // 打包命令 可能项目由不同的构建命令 如打包指定环境的代码
-      PATH: "/root/603", // 服务器存放静态文件目录
-    },
+    }
   ],
+  // 钉钉机器人配置
+  DingDing:{
+   /**
+   * 钉钉名称
+   */
+  name: '扶绥',
+  /**
+   * 机器人推送地址
+   */
+  hook: 'https://oapi.dingtalk.com/robot/send?access_token=2f753bce34bee19cb438ef83959584919c0f92ac0848d30f84d601cdf9d8e7cd',
+  /**
+   * 秘钥
+   */
+  secret: 'SECb0689430c33069ba707ee78979b3388bae16754b9ee6b39971595e22e3055c42',
+  }
 });
