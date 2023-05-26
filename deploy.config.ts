@@ -1,4 +1,4 @@
-module.exports =(projectName:string)=> Object.freeze({
+module.exports =()=> Object.freeze({
   PRIVATE_KEY: "home/.ssh/id_rsa", // 密钥地址
   SERVER: [
     {
@@ -21,10 +21,10 @@ module.exports =(projectName:string)=> Object.freeze({
   /**
    * 机器人推送地址
    */
-  hook: 'https://oapi.dingtalk.com/robot/send?access_token=2f753bce34bee19cb438ef83959584919c0f92ac0848d30f84d601cdf9d8e7cd',
+  hook: '',
   /**
    * 秘钥
    */
-  secret: 'SECb0689430c33069ba707ee78979b3388bae16754b9ee6b39971595e22e3055c42',
+  secret: '',
   }
 });
